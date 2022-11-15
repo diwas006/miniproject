@@ -1,0 +1,460 @@
+/*                  ........HEADER.........                  */
+
+body{
+    margin: 0;
+    font-family: "quicksand",sans-serif;
+}
+
+#page-logo a{
+    font-family: "Oleo Script",sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    color: #f5f4a0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 60px;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    margin-left: 20px;
+}
+
+header  ul li a{
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+    padding: 12px;
+    font-size: 24px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+header ul li a:hover{
+    color: rgb(77, 77, 77);
+    background-color: rgb(255, 251, 0);
+}
+
+/*                  ........SECTION-1.........                  */
+
+#hero{
+    height: 800px;
+    background-image: url(https://i.ibb.co/YdTwYXh/ocean.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-content{
+    width: 900px;
+    background-color: rgba(51, 47, 47, 0.8);
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+}
+
+#hero-content h1{
+    color: white;
+    font-family: "Raleway";
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#hero-content p{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300px;
+    margin-bottom: 32px;
+}
+
+#hero-content a{
+    color: black;
+    background-color: rgb(255, 251, 0);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+
+#hero-content a:hover{
+    background-color: rgb(255, 238, 0);
+}
+
+
+
+/*                  ........SECTION-2.........                  */
+
+#highlights {
+    padding: 24px;
+    background: linear-gradient(0deg, rgb(227,255,253), rgb(202,243,240));
+}
+
+#highlights h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 24px 0;
+    text-transform: uppercase;
+    color: rgb(59, 65, 64);
+}
+
+#destinations{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.destination{
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.destination img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgb(68, 67, 67);
+    object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.destination img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.destination p{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(124, 123, 123);
+    margin: 12px 0;
+}
+
+.destination strong{
+    color: rgb(0, 160, 117);
+}
+
+
+/*                  ........FOOTER.........                  */
+
+footer{
+    background: linear-gradient(70deg, rgb(24,24,24), rgb(25,29,29));
+    padding: 36px 0;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer li{
+    height: 80px;
+    width: 80px;
+    margin: 0 50px;
+}
+
+footer img{
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------------------------Places Page------------------------------------------------------*/
+
+/*                  ........HEADER.........                  */
+
+#places-body{
+    background: linear-gradient(30deg, rgb(77,77,77), rgb(58,58,58));
+    color: rgb(68, 68, 68);
+}
+
+.places-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 60px;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.places-header #page-logo a{
+    font-family: "Oleo Script",sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    color: #f5f4a0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+
+/*                  ........MAIN.........                  */
+
+.places-main ul{
+    width: 1300px;
+    margin: 0 auto 48px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+}
+
+li:nth-of-type(3){
+    grid-column: 1 / span 2;
+}
+
+li:nth-of-type(6){
+    grid-column: 1 / span 2;
+}
+
+.places-main li{
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.places-main li img{
+    height: 300px;
+    width: 280px;
+    object-fit: cover;
+}
+
+.item-content{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-content h2{
+    margin: 0;
+}
+
+.actions{
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.actions a{
+    text-decoration: none;
+    color: rgb(22,211,228);
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.actions a:hover{
+    background-color: rgb(235, 253, 255);
+}
+
+
+
+
+/*----------------------------------------About Page------------------------------------------------------*/
+
+/*                  ........HEADER.........                  */
+
+#about-body{
+    background: linear-gradient(30deg, rgb(77,77,77), rgb(58,58,58));
+    color: rgb(68, 68, 68);
+}
+
+.about-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 60px;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-header #page-logo a{
+    font-family: "Oleo Script",sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    color: #f5f4a0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.about-main{
+    color: white;
+    padding: 30px;
+}
+
+
+
+/*----------------------------------------Explore Page------------------------------------------------------*/
+
+
+#explore-body{
+    background: linear-gradient(30deg, rgb(77,77,77), rgb(58,58,58));
+    color: rgb(68, 68, 68);
+}
+
+.explore-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 60px;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.explore-header #page-logo a{
+    font-family: "Oleo Script",sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    color: #f5f4a0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.explore-main {
+    color: white;
+    padding: 16px 64px;
+    
+}
+
+.explore-main h1{
+    font-size: 48px;
+    color: rgb(255, 251, 0);
+    text-decoration: underline;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.explore-main h2{
+    font-size: 40px;
+    color: rgb(255, 251, 0);
+    text-decoration: underline;
+    font-family: "Raleway";
+    text-transform: uppercase;
+}
+
+.explore-main p{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/*#maps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+
+
+/*----------------------------------------Weather Page------------------------------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/sunny.jpg');
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+
+.app-main {
+    width: 50vh;
+    margin: 100px auto;
+    background-color: rgba(240,248,255, 0.6);
+    padding: 20px;
+    text-align: center;
+}
+
+.app-main > * {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    border: none;
+    outline: none;
+    color: #582233;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.input-box:focus {
+    background-color: rgba(255,255,255);
+}
+
+
+.weather-body {
+    display: none;
+    color: #582233;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+    height: 50vh;
+}
+
+.location-details {
+    font-weight: bold;
+}
+
+.weather-status {
+    padding: 20px;
+}
+
+.temp {
+    font-size: 50pt;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px rgba(0,0,0,0.3);
+}
+
+.min-max, .weather {
+    font-size: 12pt;
+    font-weight: 600;
+}
